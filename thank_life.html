@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Verification - Life University.</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" id="main-css" href="./style(1).css" type="text/css" media="all">
+    <style>
+      .main-nav-bar2020 .menu-nav2020-bottom-container .menu .menu-item {
+        border-left: 1px solid #141d28;
+        flex: 0 0 11% !important;
+    }
+
+
+    /**ELLUCIAN FORMS**/
+    .desktop-el-form:hover{background:#fddd00}
+    .button-form:hover{background:#fddd00}
+    .button-form a:link{text-decoration:none;}
+
+    .mobile-el-form{display:none;}
+    @media only screen and (max-width: 601px) {
+      .desktop-el-form{display:none}
+      .mobile-el-form{display:inline-block;}
+      .button-form {padding:10px 20px;width:120%}
+    }
+
+    /****For 2023 Academic pages****/
+    .desktopelform:hover{background:#fddd00}
+    .button-form{width:100%;background:#97c93c;color:#141d28;font-weight:bold;text-align:left;padding:15px 0 15px 0px;font-size:16px;box-shadow:0px 1px 0px #ddd}
+    .button-form:hover{background:#fddd00}
+    .button-form a:link{text-decoration:none;}
+
+    .mobileelform{display:none;}
+    @media only screen and (max-width: 601px) {
+      .desktop-el-form{display:none}
+      .mobile-el-form{display:inline-block;}
+      .button-form {padding:10px 20px;width:120%}
+    }
+
+
+
+    @media only screen and (min-width: 950px) {
+    .footer-brand-holder {
+    margin-bottom: 72px;
+    }
+    }
+
+    @media only screen and (min-width: 950px) {
+    .footer-connect-2018 {
+    margin-top: 450px;
+    }
+    }
+
+    @media only screen and (min-width: 800px) {
+    .footer-connect-2018 {
+    margin-top: 490px;
+    }
+    }
+
+    @media only screen and (min-width: 700px), all {
+    .masthead .masthead-hero {
+    max-height: 100vh !important;
+    }
+    }
+    .hp-promo__tagline span {
+    font-size:3.6rem;
+    }
+
+    html {
+    scroll-behavior: auto;
+    }
+    .hp-promo__headline span {
+    font-size:.9em;
+    }
+    .message span {
+    font-weight:900;font-size:2.2rem;
+    }
+    #crc-p {
+    background-color: rgba(5,5,5,.5);padding: 30px 30px 15px 30px;text-align: left !important;font-size: 1.9em;font-weight: 700;
+    }
+
+    @media only screen and (min-width: 1250px) {
+    .hp-promo__badge {
+    left:4rem;
+    }
+    }
+
+    @media only screen and (max-width : 1024px) {
+    #crc-p {
+    font-size:1em;
+    line-height:1;
+    padding:10px;
+    }
+    .hp-promo__tagline span {
+    font-size:1.6rem;
+    }
+    .hp-promo__headline span {
+    font-size:.5em;
+    }
+    .message span {
+    font-size:1.2rem;
+    position:relative;
+    top:-50px;
+    }
+    .hp-promo__callouts li .stat {
+    line-height:1.5rem;
+    display:none;
+    }
+    }
+
+    /*Acalog adjustments*/
+    .acalog-page-name {
+    display:none;
+    }
+
+    .acalog-page-description h2, h3{
+    font-size:2em;
+    font-family:AxiformaBlack,Helvetica,Arial,sans-serif;
+    color:#818181;
+    }
+
+    .acalog-page-description h3{
+    font-size:1.2em;
+    color:#181818;
+    font-weight:700;
+    border-bottom:1px solid #97c93c;
+    }
+
+    h1.acalog-program-name {
+    display:none;
+    }
+    h2.acalog-program-core-name {
+    display:none;
+    }
+    .acalog-program-core-name {
+    font-size:2em;
+    font-family:TrajanPro-Reglar;
+    }
+    .landing-page-intro p:first-of-type, .landing-page-intro p {
+    font-size:1.2em;
+    line-height:120%;
+    }
+
+
+
+    /*CRC temp home */
+    .masthead-hero-old.promo .masthead-down-arrow-old {
+        bottom: 5.2rem;
+    }
+
+    .hp-promo__badge>img {
+        width:120%;
+    }
+
+    .lead_title {
+    font-size: 2.5vw;
+    }
+    .lead_subtitle_h3 {
+    font-family: TrajanPro-Regular; 
+    border-bottom: 1px solid #94d92c;
+    font-weight: 900;
+    }
+    .page-title {
+    font-weight:100;
+    display:none;
+    }
+
+    /*************
+    Dashboards
+    ***************/
+    .wrapper.dashboard:before {
+        z-index: -2;
+      /* background-color: #B6CEE1;*/
+      /*  background-color: #94c96c; */
+      /*  background:-webkit-linear-gradient(left top, #94c96c, #94ff00);
+        background: -o-linear-gradient(bottom right, #94c96c, #94ff00);
+        background: -moz-linear-gradient(bottom right, #94c96c, #94ff00);
+        background:linear-gradient(to bottom right, #94c96c, #94ff00); */
+        background-color: #f0f0f0;
+        background-image: url("http://www.life.edu/wp-content/uploads/2017/08/dark-stripes.png");
+    }
+    .dashboard-title {
+        font-size: 3.6rem;
+        color: #181818;
+        font-family: blacker;
+    }
+    .dashboard-quick-links li {
+    background-color:#fff;
+    }
+    .dashboard-block {
+    background-color:#fff;
+    }
+    .dashboard-quicklinks-abbr p i {
+        color: #181818;
+    }
+    .dashboard-section-title {
+        background-color: #97c93c;
+        color: #181818;
+        border-bottom: 3px solid #93c97c;
+        padding: 10px 0;
+        font-family: TrajanPro-Regular;
+    }
+    .dashboard-news-item h3 {
+    color: #181818;
+    }
+    .dashboard-list {
+    font-size:1.3em
+    }
+    .dashboard-go-to {
+    background-color: #fff;;
+    border-top:none;
+    }
+    .dashboard-go-to a:link, .dashboard-go-to a:visited {
+    color:#181818;
+    font-size:2rem;
+    }
+    ul.dashboard-list li a:hover {
+    color:#97c93c;
+    }
+    /************
+    MEGA MENU
+    ************/
+
+    /*EuropeEvents hide Gallery*/
+    .post-id-14668 a.gallery-launch, .gallery-launch:link, .gallery-launch:visited {
+    display:none !important;
+    }
+
+
+    .page_title_header {
+    line-height: 1.4em; font-size: 1.45em !important; font-family: TrajanPro-Regular;text-transform:none !important;
+    color:#090c4c !important;
+    }
+    .page_title_header span {
+    font-size: 2em;
+    }
+    /*Student Ambassadors */
+    .quote_box {
+      /*width:70%;
+      height:400px;*/
+      background:#FFF;
+      margin:40px auto;
+    }
+
+    .box_effect
+    {
+        position:relative;
+        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    }
+    .box_efffect:before, .effect7:after
+    {
+        content:"";
+        position:absolute; 
+        z-index:-1;
+        box-shadow:0 0 20px rgba(0,0,0,0.8);
+        top:0;
+        bottom:0;
+        left:10px;
+        right:10px;
+        border-radius:100px / 10px;
+    } 
+    .box_effect:after
+    {
+        right:10px; 
+        left:auto; 
+        transform:skew(8deg) rotate(3deg);
+    }
+
+    /*menu grid title padding*/
+    .navigation-grid li div {
+    padding:0 3px;
+    }
+
+
+
+    /*footer to enlarge the column headers */
+    [class*=" footer-col-"] h2, [class^="footer-col-"] h2 {
+        font-size: 1.9rem;
+        line-height: 1.5rem;
+    }
+    /*hide footer 'RESOURCES'*/
+    .footer-row .footer-col-1 .footer-header {
+    display:none;
+    }
+    .footer-col-1 {
+    position:relative;
+    top:20px;
+    }
+    /*ACCORDION STYLE*/
+    .accordion {
+    border:none;
+    }
+    .accordion__title {
+    padding:.4rem 0;
+    /*font-size:1.5em !important;*/
+    font-size:1.5em;
+    font-weight:500;
+    padding-left:1.5rem;
+    background-color:rgba(242,242,242,.4);
+    margin-top:10px;
+    }
+
+    .accordion_em {
+    background-color:rgba(130,174,50,.4)
+    }
+    .accordion__content {
+    position:relative;
+    bottom:10px;
+    }
+    .accordion__title-clum {
+    padding:.9rem 0;
+    padding-left:50px;
+    font-size:1.1em;
+    font-weight:500;
+    font-family:'Times New Roman', Georgia, Serif;
+    }
+
+    .accordion__title-press {
+    background:none;
+    padding:.9rem 0;
+    padding-left:50px;
+    font-weight:500;
+    line-height:.8 !important;
+    }
+    .accordion__title-press span {
+    font-size:.8em;
+    }
+    .accordion__content-clum {
+    font-size:1.8rem !important;
+    font-family:'Times New Roman', Georgia, Serif;
+    line-height:145%;
+    margin-top:10px;
+    }
+    .accordion__title-clum:before {
+    font-family: "FontAwesome";
+    content:'\f0da';
+    }
+
+    .accordion.open .accordion__title-clum:before {
+    font-family: "FontAwesome";
+    content:'\f0d7';
+    }
+    .accordion__title-policy {
+    padding:.9rem 0;
+    padding-left:40px;
+    font-size:1.1em;
+    font-weight:500;
+
+    }
+
+    .accordion__title-policy:before {
+    font-family: "FontAwesome";
+    content:'\f138';
+    font-size:1.4rem;
+    margin-right:0;
+    }
+    .accordion.open .accordion__title-policy:before {
+    font-family: "FontAwesome";
+    content:'\f13a';
+    font-size:1.4rem;
+    margin-right:0;
+    }
+    .policies_content p {
+    margin:5px 0;
+    }
+    .policy_header {
+
+    }
+    .policy_header:after {
+    font-family: "FontAwesome";
+    content:'\f0da';
+    margin-left:10px;
+    }
+    .open .policy_header:after {
+    font-family: "FontAwesome";
+    content:'\f0d7';
+    margin-left:10px;
+    }
+    .accordion.open .policy_header:before {
+    content:' ';
+    }
+    .policy_header:before {
+    content:' ';
+    }
+    /*Press Release*/
+    .midnight_header {
+    font-family: TrajanPro-Regular; width: 100%; background-color: #090c4c; color: #fff; padding: 2px 0 0 10px;letter-spacing:.6em;font-size:1.3em;font-weight:900;box-shadow:-7px 8px 8px #ccc;
+    }
+    .midnight_header span {
+    float:right;
+    }
+
+    /*LLW BUTTONS*/
+    .llw_button .button.primary-content {
+    background-color:#8cc63e;
+    color:#fff;
+    }
+    .llw_button .button.primary-content:hover{
+    color:#000;
+    opacity:.3;
+    font-size:1.5rem;
+    }
+    .llw_button .upcoming .button.primary-content {
+    background-color:#8cc63e;
+    color:#fff;
+    opacity:.7;
+    }
+    .faculty-image {
+    padding: 3px 0 !important;
+    border-top:3px solid #94d500 !important;
+    border-bottom:3px solid #94d500 !important;
+    }
+    /*SEARCH and FORM color*/
+    .post-password-form {
+    color:#000 !important;
+    }
+
+    .inline-search-item input[type=search] {
+    color:#000;
+    border: 1px solid #000;
+    }
+
+    .gfield_description, .gfield input[type="email"], .gfield input[type="number"], .gfield input[type="tel"], .gfield input[type="text"], .gfield input[type="url"], .gfield select, .gfield textarea {
+    color:#000 !important;
+    }
+    /*HOME PAGE FORM*/
+    /*#input_16_5 {
+    border:none;
+    display:none;
+    }
+    */
+    #field_16_5 div:nth-child(2) {
+    color:transparent !important;
+    display:none;
+    }
+
+
+
+    /*MEGA MENU*/
+    #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item h4.mega-block-title {
+    /*color:#fff; */
+    }
+    /*department forms*/
+    .department_form .gfield_label .gfield_required {
+    display:none;
+    }
+    input#gform_submit_button_46.gform_button.button {
+    padding: .2rem 2.8rem;
+    }
+    .dept_img:hover {
+    width:180px;
+    height:180px;
+    opacity:.7;
+    }
+    /*Distance Ed State page*/
+
+    .formElems {
+    color:#000;
+    }
+    .form-field {
+    color:#000;
+    }
+    /*5 for LIFE page*/
+    /*accordion title*/
+    h1.accordion__title.five_for_life_title {
+    font-size:36px !important;
+    background:none;
+    text-shadow:-2px 2px 2px #000;
+    line-height:.9em;
+    margin-bottom:.8rem;
+    }
+    h1.accordion__title.five_for_life_title::before {
+    content:""
+    }
+    div.accordion.open h1.accordion__title.five_for_life_title::before {
+    content:""
+    }
+    .drop_cap_number {
+    font-size:9rem;
+    text-shadow:-2px 2px 10px #000,1px 1px #000;
+    color:#fff;
+    float:left;
+    margin:10px 20px 40px 0;
+    }
+    .five_for_life_q {
+    font-size:2.5rem;
+    font-weight:600;
+    font-family:TrajanPro-Regular;
+    color:#727a79;
+    }
+    .five_for_life_a {
+    font-size:2.2rem !important;
+    font-weight:400;
+    position:relative;
+    left:7%;
+    width:90%;
+    margin:50px 0 40px 0;
+    }
+    .five_for_life_link {
+    position:relative;
+    right:12%;
+    font-family: PTSans-Regular,Helvetica,Arial,sans-serif;
+    font-size:2.0rem;
+    float:right;
+    margin: 0 0 30px 0;
+    }
+    .five_for_life_intro {
+    padding: 50px;
+    box-shadow: -5px 4px 12px #ccc;
+    margin-bottom: 100px;
+    }
+    .five_for_tab {
+    border-bottom: 1px solid #92c94d;
+    border-radius:15px 15px 0 0;
+    width: 20%;
+    background-color: #92c94d;
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px;
+    }
+    .five_for_no-tab {
+    border-bottom: 1px solid #92c94d;
+    }
+    p.description {
+    font-size: 2.4rem;
+        line-height: .9 !important;
+        position: relative;
+        bottom: 20px;
+        font-family: TrajanPro-Regular;
+        margin-left: 2%;
+        color:#8f9091;
+    }
+    /*PHDSC Degree*/
+    .detail_accordion_title:before {
+        content: ' ';
+    }
+    .detail_accordion_title {
+    background-color:transparent;
+    font-size:1.4rem !important;
+    position:relative;
+    bottom:20px;
+    }
+    .phdsc_tab {
+    display:none;
+    }
+    .phdsc_table {
+    margin-right: 0px;
+    font-family: 'TrajanPro-Regular';
+    background-color: #090c4c;
+    padding: 20px 6px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight:500;
+    vertical-align: middle;
+    border-bottom:2px solid #fff;
+    border-right:2px solid #fff;
+    width:24%;
+    color:#fff;
+    }
+    .phdsc_table:hover{
+    font-size:1.7em;
+    font-weight:900;
+    padding:21px 7px;
+    background-color:rgba(9,12,76,.8);
+    color:#94d500;
+    text-shadow: -1px 1px #94d500;
+    }
+    #tops a {
+    text-decoration:none;
+    color:#fff !important;
+    }
+
+    .academics_list {
+    text-decoration:none;
+    color:#ffffff !important;
+    }
+    .academics_list:hover {
+    cursor:pointer !important;
+    color:#94c500 !important;
+    }
+
+    /*CRC HOMEPAGE*/
+    .stat {
+    width:90px !important;
+    }
+    ul.hp-promo__callouts {
+    position:relative;
+    top:50px;
+    }
+
+
+    /*Moblle Devices Portrait */
+    @media only screen 
+      and (min-device-width: 375px) 
+      and (max-device-width: 667px) 
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (orientation: portrait) { 
+
+    .faculty_table td {
+    display:block;
+    }
+    div#next.next-block2020__text p a:link{color:#fff}
+
+    .register-button {
+    background-color:#fff !important;
+    padding:0  !important;
+    border-radius:0  !important;
+    left:10%  !important;
+    }
+    h1.mobile-header-one {
+    font-size:60px  !important;
+    }
+    }
+
+    p {
+    color: unset;
+    font-weight: unset;
+    }
+
+    .red-lol-banner {
+    height: 45px;
+    background:radial-gradient(#97c93c, #669906, #517808);
+    text-align: center;
+    border-top:1px dotted #fff;
+    }
+    .red-lol-banner a, .red-lol-banner a:link, .red-lol-banner a:visited {
+    color: white;
+    font-size: 28px;
+    font-weight:900;
+    line-height: 45px;
+    letter-spacing:3px;
+    text-decoration:none;
+    text-shadow: #141d28 2px 2px 4px;
+    }
+    </style>
+  </head>
+<body>
+    <header class="site-header2020 scrolled"n style="border-bottom: 5px solid #97c93c;padding-bottom: 10px;">
+
+    <div class="main-nav-bar2020">
+      <div class="middle-bar">
+        <div class="middle-bar__left">
+          <a href="#" class="hamburger" id="openMobileMenu"></a>
+          <div class="crest">
+              <img src="./lifecrest.jpg">
+          </div>
+          <h1 class="banner-logo">
+              <a class="logo2020" href="#" title="Home"><i class="icon-logo"></i></a>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrapper">
+		<div class="content-wrap"> <!-- container and BG -->
+			<div class="landing-page-navigation">
+				<ul class="breadcrumbs"><li class="secondary-nav-toggle"><a href="https://www.life.edu/about-pages/oiepr/#"><i class="icon-nav-arrow-toggle"></i><span>Secondary Navigation Menu</span></a></li><li><a href="https://www.life.edu/">Life</a></li><li><a href="https://www.life.edu/about">About</a></li><li> OIEPR</li></ul>				<ul id="secondary-navigation" class="secondary-navigation"><li><a href="https://www.life.edu/about-pages/wellness-portfolio/" title="Wellness Portfolio">Wellness Portfolio</a></li><li><a href="https://www.life.edu/about-pages/faces-of-life-student-ambassadors/" title="Faces of LIFE – Student Ambassadors">Faces of LIFE – Student Ambassadors</a></li><li><a href="https://www.life.edu/about-pages/history-of-life/" title="History of Life">History of Life</a></li><li><a href="https://www.life.edu/about-pages/executive-office/" title="Executive Office">Executive Office</a></li><li><a href="https://www.life.edu/about-pages/life-center-for-seniors/" title="Life Center for Seniors">Life Center for Seniors</a></li><li><a href="https://www.life.edu/about-pages/accreditation/" title="Accreditation">Accreditation</a></li><li><a href="https://www.life.edu/about-pages/presidents-bio/" title="President’s Bio">President’s Bio</a></li><li><a href="https://www.life.edu/about-pages/university-leadership/" title="University Leadership">University Leadership</a></li><li class="active"><a href="https://www.life.edu/about-pages/oiepr/" title="OIEPR">OIEPR</a></li><li><a href="https://www.life.edu/about-pages/mission-and-values/" title="Mission and Values">Mission and Values</a></li><li><a href="https://www.life.edu/about-pages/office-of-diversity-equity-inclusion/" title="Office of Diversity, Equity &amp; Inclusion">Office of Diversity, Equity &amp; Inclusion</a></li><li><a href="https://www.life.edu/about-pages/news-media/" title="News &amp; Media">News &amp; Media</a></li><li><a href="https://www.life.edu/about-pages/title-ix/" title="Title IX">Title IX</a></li><li><a href="https://www.life.edu/about-pages/university-initiatives/" title="University Initiatives">University Initiatives</a></li><li><a href="https://www.life.edu/about-pages/research-scholarly-and-creative-works-awards/" title="Research, Scholarly, Creative Works Awards">Research, Scholarly, Creative Works Awards</a></li><li><a href="https://www.life.edu/about-pages/nbce/" title="NBCE">NBCE</a></li><li><a href="https://www.life.edu/about-pages/human-resources/" title="Human Resources">Human Resources</a></li><li><a href="https://www.life.edu/about-pages/lifes-fall-ce/" title="Fall CE">Fall CE</a></li><li><a href="https://www.life.edu/about-pages/quality-enhancement-plan/" title="Quality Enhancement Plan">Quality Enhancement Plan</a></li><li><a href="https://www.life.edu/about-pages/student-achievement/" title="Student Achievement">Student Achievement</a></li><li><a href="https://www.life.edu/about-pages/dcp-completion-rates/" title="DCP Completion Rates">DCP Completion Rates</a></li></ul>			</div>
+			<div class="page-content">
+				<!--  -->
+
+				<header class="content-header">
+          <h1 class="">
+            Thanks for Verification.            
+          </h1>
+          <p>You can close the page.</p>
+        </header>
+			</div>
+		</div>
+	</div>
+
+
+
+ <footer>
+
+  <div class="footer-row">
+    <div class="footer-col-1">
+      <h2 class="footer-header">Resources</h2>
+        <h2>University Resources</h2>
+        <div class="footer-column">
+          <ul class="foot-column__left-side">
+                          <li><a href="http://www.life.edu/about-pages/human-resources/employment-opportunities/"> Employment</a></li>
+                                <li><a href="https://living.life.edu/slice-of-life/"> University Blog</a></li>
+                                <li><a href="http://www.life.edu/campus-life-pages/student-success-center/disability-services/"> Disability Services</a></li>
+                                <li><a href="http://www.life.edu/about-pages/basic-information/student-achievement/"> NBCE</a></li>
+                                <li><a href="http://www.life.edu/campus-life-pages/career-services/"> Career Services</a></li>
+                                <li><a href="http://www.life.edu/privacy-policy/"> Privacy Policy</a></li>
+                                <li><a href="http://www.life.edu/about-pages/office-of-diversity-equity-inclusion/"> Office of Diversity,<br>Equity &amp; Inclusion</a></li>
+                                <li><a href="http://www.life.edu/campus-life-pages/health-services/heerf-reporting/"> HEERF Reporting</a></li>
+                           </ul>
+          <ul class="foot-column__right-side">
+                              <li><a href="http://living.life.edu/"> News &amp; Events</a></li>
+                                    <li><a href="http://www.life.edu/academic-pages/academic-calendar/"> Academic Calendar</a></li>
+                                    <li><a href="http://www.life.edu/about-pages/basic-information/heoa-compliance/"> HEOA Compliance</a></li>
+                                    <li><a href="http://www.life.edu/about-pages/basic-information/student-achievement/"> DCP Completion Rates</a></li>
+                                    <li><a href="http://www.life.edu/credit-card-privacysecurity-policy/"> Credit Card Privacy Policy</a></li>
+                                    <li><a href="http://www.life.edu/about-pages/title-ix/"> Title IX</a></li>
+                                    <li><a href="https://www.life.edu/academic-pages/registrar/veteran-services-and-engagement/"> Veteran Services &amp; Engagement</a></li>
+                                    <li><a href="https://liferunningeagles.com/"> Athletics</a></li>
+                             </ul>
+           <div class="footer-brand-holder">
+            <img src="./Life Edu_files/life-horizontal.svg">
+          </div>
+      </div>
+    </div>
+    <div class="footer-col-2">
+      <h2>Visitor Resources</h2>
+      <div class="footer-column">
+        <ul class="foot-column__left-side">
+                      <li><a href="http://www.life.edu/admissions-pages/visit-life/parking-and-visitor-info/"> Visitor Information</a></li>
+                            <li><a href="http://www.life.edu/admissions-pages/visit-life/academic-tours/"> Academic Tours</a></li>
+                            <li><a href="http://www.life.edu/about-pages/basic-information/campus-map/"> Campus Map</a></li>
+                            <li><a href="https://www.life.edu/admissions-pages/visitor-resources//#maps"> Virtual Tour</a></li>
+                            <li><a href="http://www.life.edu/admissions-pages/visit-life/undergraduate-preview-day/"> Undergrad Preview Day</a></li>
+                            <li><a href="http://www.youtube.com/user/LifeAtLife"> Videos</a></li>
+                            <li><a href="https://living.life.edu/social-media-hub/"> Social Media Hub</a></li>
+                       </ul>
+        <ul class="foot-column__right-side">
+                          <li><a href="http://www.life.edu/admissions-pages/visit-life/"> Visit Life U</a></li>
+                                <li><a href="https://www.life.edu/admissions-pages/visitor-resources/#lodging"> Area Hotels</a></li>
+                                <li><a href="http://www.life.edu/admissions-pages/visit-life/life-leadership-weekend/"> LIFE Leadership Weekend</a></li>
+                                <li><a href="http://www.life.edu/admissions-pages/visit-life/life-visits-you/"> Life  Visits You</a></li>
+                                <li><a href="http://www.life.edu/about-pages/basic-information/contact/"> Contact Information</a></li>
+                                <li><a href="https://lifevisionseminars.com/"> LIFE Vision Seminars</a></li>
+                                <li><a href="http://lifechiropractic.com/"> Chiropractic Centers</a></li>
+                         </ul>
+      </div>
+    </div>
+    <div class="footer-col-3">
+      <h2>Alumni and Friends</h2>
+      <div class="footer-column">
+        <ul class="foot-column__left-side">
+                      <li><a href="http://fallce.life.edu/"> LIFE Vision–Fall CElebration Extravaganza</a></li>
+                            <li><a href="http://alumni.life.edu/GiveNow"> Give to Life U</a></li>
+                       </ul>
+        <ul class="foot-column__right-side">
+                          <li><a href="http://alumni.life.edu/"> Alumni</a></li>
+                         </ul>
+      </div>
+      <div style="clear:both"></div>
+      <h2>Initiatives</h2>
+      <div class="footer-column">
+        <ul class="foot-column__left-side">
+                      <li><a href="http://past.life.edu/octagon"> The Octagon</a></li>
+                            <li><a href="https://ccr.life.edu/researchlink/"> Research Link</a></li>
+                            <li><a href="https://lifeforce.life.edu/"> LIFEforce</a></li>
+                            <li><a href="https://www.neurolifeinstitute.com/"> NeuroLIFE Instiitute</a></li>
+                       </ul>
+        <ul class="foot-column__right-side">
+                          <li><a href="http://www.life.edu/about-pages/research/dr-sid-e-williams-center-for-chiropractic-research/"> Dr. Williams Center for Chiropractic Research</a></li>
+                                <li><a href="http://www.life.edu/about-pages/research-scholarly-and-creative-works-awards/cetl-research-scholarly-support/"> OSRSA</a></li>
+                                <li><a href="http://www.compassion.life.edu/chillon-project/"> Chillon Project</a></li>
+                         </ul>
+      </div>
+    </div>
+    <div class="footer-col-5">
+      <h2>Life University</h2>
+      <address>
+        1269 Barclay Circle
+        Marietta, GA 30060<br>
+        (800) 543-3202 | (770) 426-2600<br>
+        <br>
+        <strong>Life University – Office of Representation</strong><br>
+        Grand-Montfleury 48<br>
+        CH-1290<br>
+        Versoix-Geneva, Switzerland<br>
+        Tel: 022 755 54 56<br>
+        <br>
+        <strong>Universidad Nacional</strong><br>
+        Campus Omar Dengo<br>
+        Heredia, Costa Rica<br>
+        Avenida 1, Calle 9<br>
+        P.O Box. 86-3000<br>
+        Tel: (506) 2277-3000<br>
+       <br>
+       <strong>German Office of Representation</strong><br>
+
+        Chiropractic Zentrum Braunschweig<br>
+
+        C/O<br>
+
+        Fynn, Kjell and Sven Paris D.C.<br>
+
+        Theaterwall 4<br>
+
+        38100 Braunschweig<br>
+
+        Tel. +495314803303<br>
+
+        Email: <a href="mailto:firstvisit@gmx.de">firstvisit@gmx.de</a><br>
+
+
+      </address>
+
+      <div class="footer-copyright">
+        © 2015 Life University
+      </div>
+
+
+
+    </div>
+  </div>
+  <ul class="footer-connect-2018">
+        <li><a href="http://twitter.com/LifeUniversity" target="_blank">
+          <svg class="social-icon-x" viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="white"></path>
+          </svg>
+        </a></li>
+        <li><a href="http://www.facebook.com/life.edu" target="_blank"><i class="icon-facebook"></i></a></li>
+        <li><a href="https://www.linkedin.com/edu/school?id=18170&amp;trk=edu-up-nav-menu-home" target="_blank"><i class="icon-linked-in"></i></a></li>
+        <li><a href="http://www.youtube.com/user/LifeAtLife" target="_blank"><i class="icon-youtube"></i></a></li>
+        <li><a href="http://www.pinterest.com/lifeuniversity/" target="_blank"><i class="icon-pinterest"></i></a></li>
+        <li><a href="https://lifeuniversity.smugmug.com/" target="_blank"><i class="icon-smugmug"></i></a></li>
+        <li><a href="https://www.snapchat.com/add/lifeuniversity" target="_blank"><i class="icon-snapchat"></i></a></li>
+        <li><a href="https://www.instagram.com/lifeuniversityga/" target="_blank"><i class="icon-instagram"></i></a></li>
+    </ul>
+    <!--BE Footer: The following <div> block needs to be placed in the location where the link block will be displayed-->
+    <!--BE IXF: For your website, the location is above/below ... -->
+    <div class="be-ix-link-block">
+    
+<!-- be_ixf, bodystr, body_1 -->
+<div class="be-ix-link-block"><div class="be-related-link-container"><div class="be-label">Also of Interest</div><ul class="be-list"><li class="be-list-item"><a class="be-related-link" href="https://www.life.edu/academic-pages/registrar/">Registrar</a></li><li class="be-list-item"><a class="be-related-link" href="https://living.life.edu/press-releases/life-universitys-center-for-chiropractic-research-ccr-team-wins-award-at-association-of-chiropractic-colleges-27th-educational-and-research-agenda-conference-acc-rac/">Center for Chiropractic Research</a></li><li class="be-list-item"><a class="be-related-link" href="https://www.life.edu/about-pages/research-scholarly-and-creative-works-awards/cetl-research-scholarly-support/">CETL Research, Scholarly Support (formerly OSRSA)</a></li></ul> </div></div>
+
+<!-- be_ixf, sdk, is -->
+    </div>
+    <!--BE Footer: end-->
+</footer>
+
+</body></html>
